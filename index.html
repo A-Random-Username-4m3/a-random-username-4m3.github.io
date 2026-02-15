@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Loading…</title>
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Referrer-Policy" content="no-referrer">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="bg" aria-hidden="true"></div>
+  <div style="position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:20px;z-index:5;">
+    <div class="glass" style="max-width:720px;width:100%;">
+      <div class="card">
+        <h1>Decrypting portfolio…</h1>
+        <p style="margin-top:10px;">
+          If you were given a key, the end of the url of this page should be:
+          <code>/?=YOUR_TOKEN</code>
+        </p>
+        <p style="margin-top:10px;" id="loaderStatus">Loading encrypted files...</p>
+      </div>
+    </div>
+  </div>
+  <script src="loader-obf.js"></script>
+</body>
+</html>
